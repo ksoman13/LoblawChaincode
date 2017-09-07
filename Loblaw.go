@@ -1126,9 +1126,9 @@ func (t *ABC) getLineitemCountByPONum(stub shim.ChaincodeStubInterface, args []s
 		itemArray.ItemDetail = make([]Item, 0)
 		
 		for row := range rows {		
-			fetchedPONum := row.Columns[20].GetString_()
+			fetchedpurchageOrderNumber := row.Columns[20].GetString_()
 			
-			if fetchedPONum == PONum{
+			if fetchedpurchageOrderNumber == purchageOrderNumber{
 				
 				
 				itemdetails.LineItemId = row.Columns[0].GetString_()
