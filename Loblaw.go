@@ -1680,7 +1680,7 @@ func (t *ABC) Query(stub shim.ChaincodeStubInterface, function string, args []st
 		return t.probe(stub, args)
 	}else if function == "getLineitem" { 
 		t := ABC{}
-		return t.getLineitem(stub, args)
+		return t.getLineitemCountByPONum(stub, args)
 	}else if function == "getLineitemCountByPONum" { 
 		t := ABC{}
 		return t.getLineitem(stub, args)
