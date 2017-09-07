@@ -1165,7 +1165,7 @@ func (t *ABC) getLineitemCountByPONum(stub shim.ChaincodeStubInterface, args []s
 		
 		return mapB, nil
 	}
-	}
+	
 	
 
 //get getLineitemByStatus(irrespective of organization)
