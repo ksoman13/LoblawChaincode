@@ -1104,7 +1104,7 @@ func (t *ABC) getLineitemCountByPONum(stub shim.ChaincodeStubInterface, args []s
 			return nil, errors.New("Incorrect number of arguments. Expecting 2 argument to query")
 		}
 	
-		status := args[0]
+		purchageOrderNumber := args[0]
 		createdBy := args[1]
 		
 		fmt.Println(createdBy)
