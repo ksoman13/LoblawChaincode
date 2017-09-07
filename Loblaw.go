@@ -1116,7 +1116,7 @@ func (t *ABC) getLineitemCountByPONum(stub shim.ChaincodeStubInterface, args []s
 		rows, err := stub.GetRows("ITEM", columns)
 		
 		if err != nil {
-			jsonResp := "{\"Error\":\"Failed to get the data for the status " + status + "\"}"
+			jsonResp := "{\"Error\":\"Failed to get the data for the purchageOrderNumber " + purchageOrderNumber + "\"}"
 			return nil, errors.New(jsonResp)
 		}
 	
